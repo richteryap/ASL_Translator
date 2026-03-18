@@ -19,10 +19,21 @@ asl-ml-translator
  ┣ requirements.txt     # Dependencies
  ┣ .gitignore           # Keeps the repo clean of large binaries/data
  ┗ README.md
+```
 
 ## Installation
 **1. Clone the repository:**
 ```text
 git clone [https://github.com/richteryap/asl-ml-translator.git](https://github.com/richteryap/asl-ml-translator.git)
 cd asl-ml-translator
-
+```
+**2. Create a virtual environment (Recommended):**
+```text
+python -m venv .venv
+source .venv/Scripts/activate  # On Windows
+# source .venv/bin/activate    # On Mac/Linux
+```
+**3. Install the dependencies:**
+```text
+pip install -r requirements.txt
+```
