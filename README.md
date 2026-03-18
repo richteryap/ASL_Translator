@@ -12,7 +12,7 @@ This project uses a modular Machine Learning pipeline to extract 3D hand landmar
 
 ## Project Structure
 ```text
-asl-ml-translator
+ASL_Translator
  ┣ collect_data.py      # The Camera: Records normalized hand coordinates to CSV
  ┣ train_model.py       # The Brain Builder: Trains the Random Forest AI
  ┣ asl_translator.py    # The Final App: Live webcam ASL translation
@@ -24,8 +24,8 @@ asl-ml-translator
 ## Installation
 **1. Clone the repository:**
 ```text
-git clone [https://github.com/richteryap/asl-ml-translator.git](https://github.com/richteryap/asl-ml-translator.git)
-cd asl-ml-translator
+git clone [https://github.com/richteryap/ASL_Translator.git](https://github.com/richteryap/ASL_Translator.git)
+cd ASL_Translator
 ```
 **2. Create a virtual environment (Recommended):**
 ```text
