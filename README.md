@@ -45,7 +45,8 @@ pip install -r requirements.txt
 ```
 
 ## How to Use
-This project is designed to be highly customizable. You must collect your own hand data or email me for the dataset to train the model before translating.
+
+> **Note:** This project is designed to be highly customizable. You must collect your own hand data (or reach out to me for the baseline dataset) to train the model before translating.
 
 **Step 1: Collect Data (collect_data.py)**
 Run this script to build your dataset.
