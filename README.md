@@ -37,3 +37,36 @@ source .venv/Scripts/activate  # On Windows
 ```text
 pip install -r requirements.txt
 ```
+
+## How to Use
+This project is designed to be highly customizable. You must collect your own hand data or email me for the dataset to train the model before translating.
+
+**Step 1: Collect Data (collect_data.py)**
+Run this script to build your dataset.
+
+1. Run python collect_data.py.
+
+2. Press 0 on your keyboard to set the target to the background class. Hold **SPACEBAR** while moving an open palm or resting hand around the screen to record "noise" (Aim for 200 samples).
+
+3. Press A through Z to change the target letter. Make the corresponding ASL sign, and hold **SPACEBAR** to record samples for each letter.
+
+4. Close the app. A file named asl_dataset.csv will be generated.
+
+**Step 2: Train the AI (train_model.py)**
+Run this script to teach the AI the patterns you just recorded.
+
+1. Run python train_model.py.
+
+2. The script will automatically split your data, train a Random Forest Classifier, and grade itself on a hidden test set.
+
+3. Upon success, it will save a compiled brain file named asl_model.pkl.
+
+**Step 3: Live Translation (asl_translator.py)**
+Run the final application.
+
+1. Run python asl_translator.py.
+
+2. Step back and sign! The app will seamlessly translate your signs in real-time. If you open your hand or drop it, the text will safely disappear thanks to the background class.
+
+## Future Roadmap
+* **Add support for dynamic/motion-based signs (J, Z).**
