@@ -1,0 +1,7 @@
+# Python Virtual Environment
+.venv/
+__pycache__/
+
+# Datasets and AI Models
+*.csv
+*.pkl

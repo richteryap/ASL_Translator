@@ -1,0 +1,7 @@
+opencv-python
+mediapipe>=0.10.0
+pandas
+scikit-learn
+joblib
+
+# pip install -r requirements.txt
