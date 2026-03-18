@@ -112,8 +112,8 @@ class ASLApp:
             key = cv2.waitKey(1) & 0xFF
             if key == ord('q'):
                 break
-            # If user presses a letter a-z, change the current label
-            elif ord('a') <= key <= ord('z'):
+            # If user presses a letter a-z OR a number 0-9
+            elif ord('a') <= key <= ord('z') or ord('0') <= key <= ord('9'):
                 self.current_label = chr(key).upper()
                 self.samples_collected = 0
 

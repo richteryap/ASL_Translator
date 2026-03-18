@@ -128,7 +128,8 @@ class ASLApp:
                 # Draw UI
                 self.draw_skeleton(frame, features["coords"])
                 
-                if letter:
+                # Only draw the text if the letter is NOT our "Nothing" class (0)
+                if letter and letter != "0":
                     cv2.putText(frame, f"Letter: {letter}", (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 255, 0), 5)
 
             cv2.imshow('ML Sign Language Translator', frame)
