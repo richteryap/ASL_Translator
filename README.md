@@ -19,3 +19,10 @@ asl-ml-translator
  ┣ requirements.txt     # Dependencies
  ┣ .gitignore           # Keeps the repo clean of large binaries/data
  ┗ README.md
+
+## Installation
+**1. Clone the repository:**
+```text
+git clone [https://github.com/richteryap/asl-ml-translator.git](https://github.com/richteryap/asl-ml-translator.git)
+cd asl-ml-translator
+
